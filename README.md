@@ -65,10 +65,14 @@ cd avaliacao-tecnica-porto/backend
 ```
 
 ### Passo 2: Build do projeto
+```bash
 mvn clean install
+```
 
 ### Passo 3: Rodar a aplicação
+```bash
 mvn spring-boot:run
+```
 
 A aplicação irá rodar na porta 8081.
 
@@ -78,7 +82,7 @@ http://localhost:8081/h2
 
 ### Passo 5: Importar collection do postman
 O arquivo postman está na raiz do projeto:
-/Users/dalthonmike/Documents/Repositórios/avaliacao-tecnica-porto/desafio_tecnico.postman_collection.json
+avaliacao-tecnica-porto/desafio_tecnico.postman_collection.json
 
 ### Configuração:
 •	JDBC URL: jdbc:h2:mem:desafiodb
@@ -109,3 +113,19 @@ Este projeto atende ao desafio técnico da BookTok com:
 •	Registro de progresso de leitura
 •	Comentários com filtro de spoilers
 •	Uso de boas práticas como DTOs, MapStruct, validações e organização em camadas
+
+---
+
+## 🧪 Cobertura de Testes
+
+Para verificar a cobertura dos testes unitários com **JaCoCo**, siga os passos abaixo:
+
+1. Execute o comando Maven para gerar a cobertura:
+
+```bash
+mvn clean verify
+```
+2. Após a execução, abra a pasta de relatórios:
+3. target/site/jacoco/index.html
+
+📌 Observação: O relatório mostrará quais classes, métodos e linhas estão cobertos pelos testes unitários, permitindo identificar áreas que precisam de mais testes.
